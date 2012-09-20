@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Web App Development</title>
+    <meta name="author" content="Jeffrey Rosczyk">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/theme/default.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+      // If the query includes 'print-pdf' we'll use the PDF print sheet
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+    <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Used to fade in a background when a specific slide state is reached -->
+      <div class="state-background"></div>
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <section data-state="blackout">
+          <h1>Web App Development</h1>
+          <p>
+            MVC, Zend, Yii, and beyond
+          </p>
+        </section>
+        <section>
+          <section>
+            <h2>Web Apps Team</h2>
+            <ul>
+              <li>Ken</li>
+              <li>Jeff <span class="fragment highlight">*</span></li>
+              <li>Jim <span class="fragment highlight">*</span></li>
+              <li>Tom</li>
+              <li>Rodney</li>
+              <li>Mia</li>
+              <li>Laura</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Number of Apps in our dev queue?</h2>
+            <h3 class="question fragment">18</h3>
+            <center>
+              <table class="fragment">
+
+
+                <tr>
+                  <td><small>Campus Directory</small></td>
+                  <td><small>Student Housing Online</small></td>
+                  <td><small>WCMS</small></td>
+                  <td><small>FixIt</small></td>
+                  <td><small>eText Library</small></td>
+                </tr>
+                <tr>
+                  <td><small>OTSS</small></td>
+                  <td><small>ERS</small></td>
+                  <td><small>Volunteers SVC</small></td>
+                  <td><small>Student Services Portal</small></td>
+                  <td><small>Baytree Conference Room</small></td>
+                </tr>
+                <tr>
+                  <td><small>Multicultural Career Center</small></td>
+                  <td><small>EOP</small></td>
+                  <td><small>SCOC</small></td>
+                  <td><small>GLTBI Library</small></td>
+                  <td><small>UCSC Mobile Framework</small></td>
+                </tr>
+                <tr>
+                  <td><small>Dining Apps</small></td>
+                  <td><small>Financial Aid Calculator</small></td>
+                  <td><small>Surveys</small></td>
+                  <td><small></small></td>
+                  <td><small></small></td>
+                </tr>
+                
+              </table>
+            </center>
+          </section>
+          <section>
+            <h2>What are our needs</h2>
+            <ul>
+              <li class="fragment">Rapid development</li>
+              <li class="fragment">Train team members new to PHP &amp; MVC frameworks</li>
+              <li class="fragment">Standardize: Abilty to make a team responsible for an app  rather than an individual person</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section data-state="blackout">
+            <h2>Rapid Development</h2>
+            <blockquote>Rapid application development (RAD) is a software development methodology that uses minimal planning in favor of rapid prototyping.</blockquote>
+          </section>
+          <section>
+            <h2>How do we achieve this?</h2>
+            <ol>
+              <li class="fragment">Choose a MVC web framework to develop in</li>
+              <li class="fragment">Develop a base application, and not start every project from scratch</li>
+            </ol>
+          </section>
+          <section>
+            <h2>What is a MVC framework</h2>
+            <blockquote>Model–View–Controller (MVC) is a software design pattern that separates the presentation layer from the logic layer.</blockquote>
+          </section>
+          <section>
+            <h2>What is a base application?</h2>
+            <blockquote>A base application is a pre-built application that is used as a starting point for new application development.</blockquote>
+          </section>
+        </section>
+        <section>
+          <section data-state="blackout">
+            <h2>Train team members</h2>
+            <img src="img/duct-tape.jpg">
+          </section>
+          <section>
+            <h2>Aside from taping them to their seats... <span class="question">how do we train our team?</span></h2>
+            <ol>
+              <li class="fragment">Choose a MVC framework with strict coding standards (to promote good coding practice and to keep all apps familiar)</li>
+              <li class="fragment">Train team in the structure of our base application</li>
+              <li class="fragment">Let their skills develop as they work</li>
+            </ol>
+          </section>
+        </section>
+        <section>
+          <section data-state="blackout">
+            <h2>Standardize</h2>
+            <blockquote>When anything is possible, it's easy to become overwhelmed.</blockquote>
+          </section>
+          <section>
+            <h2>So, how do we prepose to standardize the app dev process?</h2>
+            <p class="fragment highlight"><em>By creating starting points, not boundaries</em></p>
+            <p class="fragment">This gives the project team a place to start, not a place to finish.</p>
+          </section>
+          <section>
+            <h2>Key components of our base application</h2>
+            <ul>
+              <li>familiar coding environment</li>
+              <li>branded html/css themes</li>
+              <li>shibboleth / login built in</li>
+              <li>file upload</li>
+              <li>WSYIWYG editors</li>
+              <li>API / web service</li>
+              <li>ajax tables</li>
+              <li>ability to add more features over time</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section data-state="blackout">
+            <h2>MVC web frameworks</h2>
+            <p>Model-View-Controller</p>
+            <p><img src="img/mvc.png" alt="Buster.JS"/></p>
+          </section>
+          <section>
+            <h2>MVC web frameworks: History</h2>
+            <p>This style of programming became popularized in early 2000's with Ruby on Rails. Since then every web language has tried to mimic the use of MVC development.</p>
+          </section>
+          <section>
+            <h2>MVC web frameworks: PHP</h2>
+            <ul class="fragment">
+              <li>CodeIgniter</li>
+              <li>Zend Framework</li>
+              <li>CakePHP</li>
+              <li>Symfony</li>
+              <li>Yii</li>
+              <li>FuelPHP</li>
+              <li>and the list goes into the thousands</li>
+            </ul>
+          </section>
+          <section>
+            <h2>MVC web frameworks: PHP</h2>
+            <h3 class="question">Why not just write our own?</h3>
+            <ol>
+              <li class="fragment">Because we don't want to have to rely on one or two individuals.</li>
+              <li class="fragment">We can also utilize open source libraries and classes that other users of the framework wrote, so every new feature doesn't have to be written from scratch.</li>
+              <li class="fragment">Being a part of a community allows us to share and communicate with others.</li>
+            </ol>
+          </section>
+          <section>
+            <h2>MVC web frameworks: PHP</h2>
+            <p class="question">Since there are thousands, which do we choose?</p>
+            <ul>
+              <li class="fragment">Lightweight with a small code base</li>
+              <li class="fragment">Fast (development &amp; performance)</li>
+              <li class="fragment">Strict coding standards</li>
+              <li class="fragment">Active healthy community</li>
+              <li class="fragment">Good documentation</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section data-state="blackout">
+            <h2>Zend Framework</h2>
+          </section>
+          <section>
+            <h2>ZF features:</h2>
+            <ul>
+              <li >Large code base</li>
+              <li>Sluggish performance</li>
+              <li >Loose coding standards</li>
+              <li>Poor documentation</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Since this doesn't match our development needs we started searching for a more suitable MVC framework.</h2>
+             <p class="fragment highlight">This led us to the Yii Framework</p>
+          </section>
+        </section>
+        <section>
+          <section data-state="blackout">
+            <h2>Yii Framework</h2>
+          </section>
+          <section>
+            <h2>Yii features:</h2>
+            <ul>
+              <li>Lightweight with a small code base</li>
+              <li >Fast (development &amp; performance)</li>
+              <li >Strict coding standards</li>
+              <li >Active healthy community</li>
+              <li >Good documentation</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Yii demos</h2>
+            <ul>
+              <li><a href="http://www.yiiframework.com">Yii Framework</a></li>
+              <li><a href="http://www.github.com/ucsc/apollo">Github</a></li>
+              <li><a href="http://ucsc.phpfogapp.com/drc-etext/">Shibboleth demo</a></li>
+              <li>eText wireframes</li>
+            </ul>
+          </section>
+        </section>
+        
+
+      </div>
+
+      <!-- The navigational controls UI -->
+      <aside class="controls">
+        <a class="left" href="#">&#x25C4;</a>
+        <a class="right" href="#">&#x25BA;</a>
+        <a class="up" href="#">&#x25B2;</a>
+        <a class="down" href="#">&#x25BC;</a>
+      </aside>
+
+      <!-- Presentation progress bar -->
+      <div class="progress"><span></span></div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+
+      transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/linear(2d)
+
+      // Optional libraries used to extend on reveal.js
+      dependencies: [
+      { src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+      { src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+      ]
+      });
+
+    </script>
+
+  </body>
+</html>
